@@ -1,5 +1,7 @@
 # Full-stack Test for candidates
 
+We expect that the candidate create a Web API and a Web Client to consume and display API data.
+
 ## Web API Technical Requisites
 
 The usage of the following are demanded
@@ -7,7 +9,16 @@ The usage of the following are demanded
 - .Net Core Latest Version
 - Sql Server
 
-## Main Tasks
+## Web Client Technical Requisites
+The implementation of the front-end must be separated from the Web API Solution and you are free to choose the tools used in the implementation
+
+> 1. Create a register/login component
+> 2. Create a component to add/update product
+> 3. Create a orders component containing
+>  * `Search` - Fields to filter orders by a interval of price and interval of creation date
+>  * `List` - A list of orders. User must be able to click in a row to expand and see order details.
+
+## WEB API Main Tasks
 
 > 1. Create the following unauthenticated service endpoints
 >  * `/signin` - *POST* - receiving an user name and a password
@@ -17,7 +28,7 @@ The usage of the following are demanded
 >  * `/products` - *POST* - insert a new product to the product table with the following fields: id, name, description, price, creation date
 >  * `/products/{id}` - *PUT* - update all passed fields in its appropriate record
 >  * `/orders` - *POST* - inserts an order receiving an user id and a list of products id with the current price and quantity
->  * `/orders` - *GET* - returns all orders from the logged user. The search must accept filters by price range and date interval of creation date
+>  * `/orders` - *GET* - returns all orders from the logged user. The search must accept optional filters by price range and date interval of creation date
 >  * `/orders/{orderId}` - *GET* - returns details from a specific order. Details are the total value of the order and a list of products with their individual quantity and the price
 
 ## Services Requisites
