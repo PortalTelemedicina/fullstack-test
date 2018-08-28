@@ -10,13 +10,16 @@ The usage of the following are demanded
 - Sql Server
 
 ## Web Client Technical Requisites
-The implementation of the front-end must be separated from the Web API Solution and you are free to choose the tools used in the implementation
+The front-end must be separated from the Web API Solution and you are free to choose the tools used in the implementation
 
-> 1. Create a register/login component
-> 2. Create a component to add/update product
-> 3. Create a orders component containing
->  * `Search` - Fields to filter orders by a interval of price and interval of creation date
->  * `List` - A list of orders. User must be able to click in a row to expand and see order details.
+> 1. Account
+>  * `Register` - The user must be able to register account 
+>  * `Login` - The user must be able to login into the application
+> 2. Products
+>  * `Create/Update` - The user must be able to create/update products
+> 3. Orders
+>  * `Search` - The user must be able to filter orders by a interval of price and interval of creation date
+>  * `List` - The user must be able to see a list of orders, click in a row to expand and see order details (product name, quantity, price)
 
 ## WEB API Main Tasks
 
@@ -39,9 +42,16 @@ The implementation of the front-end must be separated from the Web API Solution 
 
 ## Database Requisites
 - You are the responsible the create the database structure as best as you can think of. Conciseness, coherence and best practices are going to be considered
+- Dockerizing your database is not required but will be considered a PLUS
+
+## Running and Executing Requisites
+- Make your project running with the minimum needed interactions will be considered important in the analysis of your performance.
+- Make it as easy as possible
+- The ideal scenario will be to clone your repository and execute it through a single command such as `./INSTALL` or `./RUN`
+- Considering this is a C# test, the deployment can be supported only at Windows SO running machines or virtual machines but it will be considered a plus if you can manage to make it work at linux and/or mac osx OS's as well
 
 ## Documentation Requisites
-- It can be done in portuguese although being in english, french or spanish will also be considered a plus
+- It can be done in portuguese although being in english will also be considered a plus
 - Should be easy to read and understand the usage (from a client developer's perspective) of your services
 - It should be  easy to undertand how to execute your tests
 
@@ -51,7 +61,8 @@ The implementation of the front-end must be separated from the Web API Solution 
 - Try to keep your commits to a reasonable atomic capacity
 - Use as much best practices you see fit to address the commits and/or branch naming
 
-Feel free to ask me (*Luiz Roberto Rodolpho* - **luiz@portaltelemedicina.com.br**) any question.
+
+Feel free to ask me (*Luiz Roberto Lethang Rodolpho* - **luiz@portaltelemedicina.com.br**) any question.
 
 You have 7 days counting from tomorrow to finish and deliver us the address of your github repository. Please, let us know if you need more time.
 
