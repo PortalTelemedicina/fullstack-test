@@ -14,7 +14,7 @@ The front-end must be separated from the Web API Solution and you are free to ch
 
 > 1. Account
 >  * `Register` - The user must be able to register account 
->  * `Login` - The user must be able to login into the application
+>  * `Login` - The user must be able to log in into the application
 > 2. Products
 >  * `Create/Update` - The user must be able to create/update products
 > 3. Orders
@@ -25,7 +25,7 @@ The front-end must be separated from the Web API Solution and you are free to ch
 
 > 1. Create the following unauthenticated service endpoints
 >  * `/signin` - *POST* - receiving an user name and a password
->  * `/signup` - *POST* - receiving an user full display name, an user name, a password and an e-mail address. Upon save time, add the current date and time to the database. An unique id must be created and used throughout the `/order/` POST endpoint described later in this document
+>  * `/signup` - *POST* - receiving an user full display name, an user name, a password and e-mail address. Upon save time, add the current date and time to the database. An unique id must be created and used throughout the `/order/` POST endpoint described later in this document
 
 > 2. Create the following authenticated service endpoints
 >  * `/products` - *POST* - insert a new product to the product table with the following fields: id, name, description, price, creation date
