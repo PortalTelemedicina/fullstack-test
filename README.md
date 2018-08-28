@@ -11,6 +11,7 @@ The usage of the following are demanded
 
 ## Web Client Technical Requisites
 The front-end must be separated from the Web API Solution and you are free to choose the tools used in the implementation
+- Your HTML and CSS will be checked within the following implementation:
 
 > 1. Account
 >  * `Register` - The user must be able to register account 
@@ -19,7 +20,8 @@ The front-end must be separated from the Web API Solution and you are free to ch
 >  * `Create/Update` - The user must be able to create/update products
 > 3. Orders
 >  * `Search` - The user must be able to filter orders by a interval of price and interval of creation date
->  * `List` - The user must be able to see a list of orders, click in a row to expand and see order details (product name, quantity, price)
+>  * `List` - The user must be able to see a list of orders
+>  * `Details` - The user must be able to see order details (product name, quantity, price)
 
 ## WEB API Main Tasks
 
@@ -60,6 +62,7 @@ The front-end must be separated from the Web API Solution and you are free to ch
 - You can fork from here to get started
 - Try to keep your commits to a reasonable atomic capacity
 - Use as much best practices you see fit to address the commits and/or branch naming
+- Publishing the API and the client in the cloud will be considered a PLUS
 
 
 Feel free to ask me (*Luiz Roberto Lethang Rodolpho* - **luiz@portaltelemedicina.com.br**) any question.
