@@ -1,6 +1,6 @@
 # Full-stack Test for candidates
 
-We expect that the candidate create a Web API and a Web Client to consume and display API data.
+We expect the candidate create a Web API and a Web Client to consume and display API data.
 
 ## Web API Technical Requisites
 
