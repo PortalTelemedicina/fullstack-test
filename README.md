@@ -17,7 +17,7 @@ The front-end must be separated from the Web API Solution and you are free to ch
 >  * `Register` - The user must be able to register account 
 >  * `Login` - The user must be able to log in into the application
 > 2. Products
->  * `Create/Update` - The user must be able to create/update products
+>  * `Create/Update/Delete` - The user must be able to create, update and delete products
 > 3. Orders
 >  * `Search` - The user must be able to filter orders by a interval of price and interval of creation date
 >  * `List` - The user must be able to see a list of orders
@@ -31,6 +31,7 @@ The front-end must be separated from the Web API Solution and you are free to ch
 
 > 2. Create the following authenticated service endpoints
 >  * `/products` - *POST* - insert a new product to the product table with the following fields: id, name, description, price, creation date
+>  * `/products/{id}` - *POST* - delete a product sending a product id
 >  * `/products/{id}` - *PUT* - update all passed fields in its appropriate record
 >  * `/orders` - *POST* - inserts an order receiving an user id and a list of products id with the current price and quantity
 >  * `/orders` - *GET* - returns all orders from the logged user. The search must accept optional filters by price range and date interval of creation date
